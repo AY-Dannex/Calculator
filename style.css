@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #091921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 0 15px;
+}
+
+.calculator{
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calculator > section{
+    width: 100%;
+    padding: 40px 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.calculator > .grid-box{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator > .grid-box > button{
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #091921;
+    background-color: #0C2734;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.calculator > .grid-box > button:hover{
+    background-color: #0e2d3c;
+}
+
+.calculator > .grid-box > button:nth-child(1){
+    grid-column: span 2;
+    background-color: #FC2D2D;
+    border-top: none;
+}
+
+.calculator > .grid-box > button:nth-child(11){
+    grid-row: span 2;
+}
+
+.calculator > .grid-box > button:nth-child(17){
+    background-color: #FFA500;
+}
